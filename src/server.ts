@@ -1,5 +1,9 @@
 import 'dotenv/config';
 import express from 'express';
+import cors from 'cors'
+
+app.use(cors()) // libera geral, ok pra lab
+app.use(express.json())
 
 const app = express();
 app.use(express.json());
